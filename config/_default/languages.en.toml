@@ -17,11 +17,12 @@ title = "J. Isaac Garcia"
 [params.author]
   name = "J. Isaac Garcia"
   email = "jig0005@auburn.edu"
-  image = "img/blowfish_logo.png"
+  # image = "img/blowfish_logo.png"
+  image = "images/WebsitePicture4.jpg"
   imageQuality = 96
   headline = "Computational Physicist"
   bio = "Ph.D. physicist specializing in computational atomic physics, plasma spectroscopy, scientific software development, and scientific computing."
-#   links = [
+  links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
@@ -35,7 +36,7 @@ title = "J. Isaac Garcia"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-#     { github = "https://github.com/username" },
+#     { github = "https://github.com/jig0005" },
 #     { gitlab = "https://gitlab.com/username" },
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://username.hashnode.dev" },
@@ -45,7 +46,7 @@ title = "J. Isaac Garcia"
 #     { keyoxide = "https://keyoxide.org/URI" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
-#     { linkedin = "https://linkedin.com/in/username" },
+    { linkedin = "www.linkedin.com/in/j-isaac-garcia-3111263b6/" },
 #     { mastodon = "https://mastodon.instance/@username" },
 #     { matrix = "https://matrix.to/#/URI" },
 #     { medium = "https://medium.com/username" },
@@ -54,7 +55,7 @@ title = "J. Isaac Garcia"
 #     { patreon = "https://www.patreon.com/username" },
 #     { pinterest = "https://pinterest.com/username" },
 #     { reddit = "https://reddit.com/user/username" },
-#     { researchgate = "https://www.researchgate.net/profile/username" },
+    { researchgate = "https://www.researchgate.net/profile/J_Isaac_Garcia?ev=hdr_xprf" },
 #     { signal = "https://signal.me/#eu/userid" },
 #     { slack = "https://workspace.url/team/userid" },
 #     { snapchat = "https://snapchat.com/add/username" },
@@ -76,4 +77,4 @@ title = "J. Isaac Garcia"
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
 #     { printables = "https://www.printables.com/@username"},
-#   ]
+  ]

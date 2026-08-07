@@ -1,0 +1,99 @@
+/* ===== Glassmorphism Accordions ===== */
+
+details[data-accordion-item] {
+     background: rgba(15, 23, 42, 0.25);    /* translucent slate */
+    /* background: rgba(8,12,20,0.42); */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(150, 220, 255, 0.35);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.25),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+    
+    opacity: 0.66;
+    transition:
+        opacity 250ms ease,
+        box-shadow .25s ease,
+        background 250ms ease,
+        border-color 250ms ease,
+        transform 250ms ease;
+}
+
+details[data-accordion-item]:hover {
+    opacity: 0.95;
+
+    background: rgba(15, 23, 42, 0.35);
+
+    border-color: rgba(120, 220, 255, 0.6);
+
+    transform: translateY(-2px);
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.35),
+        0 0 12px rgba(80,220,255,.15);
+}
+
+details[data-accordion-item][open] {
+    /* max-height: 600px; */
+    opacity: .95;
+}
+
+/* Header */
+
+details[data-accordion-item] summary {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+/* Remove default disclosure triangle */
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Content */
+
+details[data-accordion-item] > div {
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Chevron */
+
+.accordion-chevron {
+    transition: transform 300ms cubic-bezier(.22,.61,.36,1);
+    color: rgba(220,240,255,0.8);
+}
+
+/* Dropdown animation */
+/* TODO:
+ * Improve accordion open/close animation.
+ * Native <details> animation is inconsistent across browsers.
+ * Consider replacing with a small JavaScript height animation later.
+ */
+details[data-accordion-item] > div {
+    overflow: hidden;
+
+    max-height: 0;
+
+    opacity: 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    transition:
+        max-height 450ms ease,
+        opacity 300ms ease,
+        padding 450ms ease;
+}
+
+details[data-accordion-item][open] > div {
+    max-height: 600px;
+
+    opacity: 1;
+
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
