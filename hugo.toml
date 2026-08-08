@@ -2,3 +2,8 @@ theme = 'blowfish'
 baseURL = 'https://example.org/'
 locale = 'en-us'
 title = 'My New Hugo Project'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+    
