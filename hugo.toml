@@ -1,7 +1,7 @@
 theme = 'blowfish'
-baseURL = 'https://example.org/'
+baseURL = 'https://jisaacgarcia.com/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'J. Isaac Garcia's Personal Website'
 
 [caches]
   [caches.images]
